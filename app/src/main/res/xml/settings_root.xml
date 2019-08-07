@@ -32,6 +32,11 @@
         />
 
     <Preference
+        android:title="@string/options_ui"
+        android:key="ui"
+        />
+
+    <Preference
         android:title="@string/options_cat_other"
         android:key="other"
         />

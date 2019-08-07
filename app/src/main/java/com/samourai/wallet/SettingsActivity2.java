@@ -849,6 +849,18 @@ public class SettingsActivity2 extends PreferenceActivity	{
                 });
 
             }
+            else if(strBranch.equals("ui"))   {
+                addPreferencesFromResource(R.xml.settings_ui);
+
+                Preference uiPref = (Preference) findPreference("ui");
+                uiPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+                    public boolean onPreferenceClick(Preference preference) {
+                        doTroubleshoot();
+                        return true;
+                    }
+                });
+                System.out.println("aki");
+            }
             else if(strBranch.equals("other"))   {
                 addPreferencesFromResource(R.xml.settings_other);
 

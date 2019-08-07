@@ -106,6 +106,12 @@
     <string name="options_whirlpool_gui2">Pair to Whirlpool GUI for continuous mixing.</string>
     <string name="options_postmix">Spend from post-mix Whirlpool</string>
 
+    <string name="options_ui">User Interface</string>
+    <string name="options_force_locale">Force Language</string>
+    <string name="options_force_locale_summary">Force the Language of the app.</string>
+    <string name="empty" translatable="false"></string>
+    <string name="system">System</string>
+
     <string name="prompt_send_backup_to_support">Send wallet backup to tech support? Does not include any private key, seed, or passphrase info.</string>
 
     <string name="timeline_today">Today</string>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ui_locale_entries" translatable="false">
+        <item>@string/system</item>
+        <item>English [en_US]</item>
+        <item>Español [es_ES]</item>
+    </string-array>
+    <string-array name="ui_locale_values" translatable="false">
+        <item>@string/empty</item>
+        <item>en_US</item>
+        <item>es_ES</item>
+    </string-array>
+
+</resources>
