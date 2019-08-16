@@ -3,13 +3,37 @@
 
     <string-array name="ui_locale_entries" translatable="false">
         <item>@string/system</item>
-        <item>English [en_US]</item>
-        <item>Español [es_ES]</item>
+        <item>@string/formal_language_name_ind</item>
+        <item>@string/formal_language_name_deu</item>
+        <item>@string/formal_language_name_eng</item>
+        <item>@string/formal_language_name_spa</item>
+        <item>@string/formal_language_name_fra</item>
+        <item>@string/formal_language_name_ita</item>
+        <item>@string/formal_language_name_hun</item>
+        <item>@string/formal_language_name_fas</item>
+        <item>@string/formal_language_name_por</item>
+        <item>@string/formal_language_name_por_BR</item>
+        <item>@string/formal_language_name_tur</item>
+        <item>@string/formal_language_name_bul</item>
+        <item>@string/formal_language_name_rus</item>
+        <item>@string/formal_language_name_zho</item>
     </string-array>
     <string-array name="ui_locale_values" translatable="false">
         <item>@string/empty</item>
+        <item>id_ID</item>
+        <item>de_DE</item>
         <item>en_US</item>
         <item>es_ES</item>
+        <item>fr_FR</item>
+        <item>it_IT</item>
+        <item>hu_HU</item>
+        <item>fa_IR</item>
+        <item>pt_PT</item>
+        <item>pt_BR</item>
+        <item>tr_TR</item>
+        <item>bg_BG</item>
+        <item>ru_RU</item>
+        <item>zh_CN</item>
     </string-array>
 
 </resources>

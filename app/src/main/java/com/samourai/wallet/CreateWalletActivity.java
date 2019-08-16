@@ -28,6 +28,7 @@ import com.samourai.wallet.payload.PayloadUtil;
 import com.samourai.wallet.util.AddressFactory;
 import com.samourai.wallet.util.AppUtil;
 import com.samourai.wallet.util.CharSequenceX;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.PrefsUtil;
 import com.samourai.wallet.util.TimeOutUtil;
 import com.samourai.wallet.widgets.ViewPager;
@@ -60,6 +61,7 @@ public class CreateWalletActivity extends FragmentActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_create_wallet);
         wallet_create_viewpager = (ViewPager) findViewById(R.id.wallet_create_viewpager);
         pagerIndicatorContainer = (LinearLayout) findViewById(dots);

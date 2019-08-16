@@ -41,6 +41,7 @@ import com.samourai.wallet.send.SendFactory;
 import com.samourai.wallet.send.UTXO;
 import com.samourai.wallet.util.AppUtil;
 import com.samourai.wallet.util.FormatsUtil;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.MessageSignUtil;
 import com.samourai.wallet.util.UTXOUtil;
 import com.samourai.wallet.whirlpool.WhirlpoolMeta;
@@ -79,6 +80,7 @@ public class UTXOActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_utxo);
         setTitle(R.string.options_utxo);
 

@@ -67,6 +67,7 @@ import com.samourai.wallet.util.AppUtil;
 import com.samourai.wallet.util.BatchSendUtil;
 import com.samourai.wallet.util.DecimalDigitsInputFilter;
 import com.samourai.wallet.util.FormatsUtil;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.MonetaryUtil;
 import com.samourai.wallet.util.PrefsUtil;
 import com.yanzhenjie.zbar.Symbol;
@@ -129,6 +130,7 @@ public class BatchSendActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_batchsend);
 
         setTitle(R.string.options_batch);

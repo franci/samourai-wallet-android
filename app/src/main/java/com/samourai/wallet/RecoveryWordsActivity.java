@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.samourai.wallet.access.AccessFactory;
 import com.samourai.wallet.util.AppUtil;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.TimeOutUtil;
 
 public class RecoveryWordsActivity extends Activity {
@@ -29,6 +30,7 @@ public class RecoveryWordsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_recovery_words);
         if (getActionBar() != null) {
             getActionBar().hide();

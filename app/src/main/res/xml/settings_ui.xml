@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ListPreference android:title="@string/options_force_locale" android:entries="@array/ui_locale_entries" android:entryValues="@array/ui_locale_values" android:key="ui.locale" android:defaultValue="@string/empty" android:summary="@string/options_force_locale_summary"/>
+    <ListPreference
+        android:title="@string/options_force_locale"
+        android:entries="@array/ui_locale_entries"
+        android:entryValues="@array/ui_locale_values"
+        android:key="ui.locale"
+        android:defaultValue="@string/empty"
+        android:summary="@string/options_force_locale_summary"/>
 
 </PreferenceScreen>

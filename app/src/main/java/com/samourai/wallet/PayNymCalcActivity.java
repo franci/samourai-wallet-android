@@ -26,6 +26,7 @@ import com.samourai.wallet.bip47.rpc.PaymentAddress;
 import com.samourai.wallet.bip47.rpc.PaymentCode;
 import com.samourai.wallet.segwit.SegwitAddress;
 import com.samourai.wallet.util.AppUtil;
+import com.samourai.wallet.util.LocaleUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +44,7 @@ public class PayNymCalcActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_paynym_calc);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

@@ -19,13 +19,14 @@ import android.view.MenuItem;
 
 import com.samourai.wallet.permissions.PermissionsUtil;
 import com.samourai.wallet.util.AppUtil;
+import com.samourai.wallet.util.LocaleUtil;
 
 public class SettingsActivity extends PreferenceActivity	{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         addPreferencesFromResource(R.xml.settings_root);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -120,6 +121,17 @@ public class SettingsActivity extends PreferenceActivity	{
                 return true;
             }
         });
+
+        Preference uiPref = (Preference) findPreference("ui");
+        uiPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent(SettingsActivity.this, SettingsActivity2.class);
+                intent.putExtra("branch", "ui");
+                startActivity(intent);
+                return true;
+            }
+        });
+
 
     }
 

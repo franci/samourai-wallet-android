@@ -22,6 +22,7 @@ import android.util.Log;
 import com.samourai.wallet.send.FeeUtil;
 import com.samourai.wallet.send.SuggestedFee;
 import com.samourai.wallet.util.AppUtil;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.PrefsUtil;
 
 import java.math.BigInteger;
@@ -53,6 +54,7 @@ public class FeeActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_fee);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

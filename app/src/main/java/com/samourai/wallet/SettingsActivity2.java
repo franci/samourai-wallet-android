@@ -64,6 +64,7 @@ import com.samourai.wallet.util.AddressFactory;
 import com.samourai.wallet.util.AppUtil;
 import com.samourai.wallet.util.BatchSendUtil;
 import com.samourai.wallet.util.CharSequenceX;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.PrefsUtil;
 import com.samourai.wallet.util.ReceiversUtil;
 import com.samourai.wallet.util.SIMUtil;
@@ -79,6 +80,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.security.MessageDigest;
+import java.util.Locale;
 
 public class SettingsActivity2 extends PreferenceActivity	{
 
@@ -91,6 +93,7 @@ public class SettingsActivity2 extends PreferenceActivity	{
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
 
         Bundle extras = getIntent().getExtras();
         if(extras != null && extras.containsKey("branch"))	{
@@ -852,14 +855,23 @@ public class SettingsActivity2 extends PreferenceActivity	{
             else if(strBranch.equals("ui"))   {
                 addPreferencesFromResource(R.xml.settings_ui);
 
-                Preference uiPref = (Preference) findPreference("ui");
+                Preference uiPref = (Preference) findPreference("ui.locale");
                 uiPref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
                     public boolean onPreferenceClick(Preference preference) {
-                        doTroubleshoot();
+                        LocaleUtil.resetSettingsLocale();
                         return true;
                     }
                 });
-                System.out.println("aki");
+                uiPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener()
+                 {
+                     @Override
+                     public boolean onPreferenceChange(Preference preference, Object o)
+                     {
+                         LocaleUtil.resetSettingsLocale();
+                         return true;
+                     }
+                 }
+                );
             }
             else if(strBranch.equals("other"))   {
                 addPreferencesFromResource(R.xml.settings_other);

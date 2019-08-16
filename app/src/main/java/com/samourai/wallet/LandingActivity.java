@@ -44,6 +44,7 @@ import com.samourai.wallet.tor.TorManager;
 import com.samourai.wallet.tor.TorService;
 import com.samourai.wallet.util.AppUtil;
 import com.samourai.wallet.util.CharSequenceX;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.PrefsUtil;
 import com.samourai.wallet.util.WebUtil;
 
@@ -80,6 +81,7 @@ public class LandingActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_landing);
         Button createAccount = findViewById(R.id.button_create_new_wallet);
         FrameLayout snackBarView = findViewById(R.id.snackbar_landing);

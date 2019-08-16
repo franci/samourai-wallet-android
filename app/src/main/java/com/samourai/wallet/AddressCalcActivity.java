@@ -34,6 +34,7 @@ import com.samourai.wallet.segwit.SegwitAddress;
 import com.samourai.wallet.util.AppUtil;
 
 import com.samourai.wallet.util.FormatsUtil;
+import com.samourai.wallet.util.LocaleUtil;
 import com.samourai.wallet.util.MessageSignUtil;
 import com.samourai.wallet.whirlpool.WhirlpoolMeta;
 
@@ -55,6 +56,7 @@ public class AddressCalcActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        LocaleUtil.updateLocalForSettings(this);
         setContentView(R.layout.activity_address_calc);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

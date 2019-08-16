@@ -751,4 +751,19 @@
     <string name="renew">RENEW</string>
 
 
+    <string name="formal_language_name_ind" translatable="false">Bahasa Indonesia [id_ID]</string>
+    <string name="formal_language_name_deu" translatable="false">Deutsch [de_DE]</string>
+    <string name="formal_language_name_eng" translatable="false">English [en_US]</string>
+    <string name="formal_language_name_spa" translatable="false">Español [es_ES]</string>
+    <string name="formal_language_name_fra" translatable="false">Français [fr_FR]</string>
+    <string name="formal_language_name_ita" translatable="false">Italiano [it_IT]</string>
+    <string name="formal_language_name_hun" translatable="false">Magyar [hu_HU]</string>
+    <string name="formal_language_name_fas" translatable="false">فارسی [fa_IR]</string>
+    <string name="formal_language_name_por" translatable="false">Português [pt_PT]</string>
+    <string name="formal_language_name_por_BR" translatable="false">Português [pT_BR]</string>
+    <string name="formal_language_name_tur" translatable="false">Türkçe [tr_TR]</string>
+    <string name="formal_language_name_bul" translatable="false">български език [bg_BG]</string>
+    <string name="formal_language_name_rus" translatable="false">Русский [ru_RU]</string>
+    <string name="formal_language_name_zho" translatable="false">中文 [zh_CN]</string>
+
 </resources>
