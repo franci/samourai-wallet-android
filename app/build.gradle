@@ -65,6 +65,11 @@ android {
             resValue "string", "app_name", "Samourai Staging"
             resValue "string", "version_name", "0.99.83"
         }
+        ronin {
+            applicationId 'com.softenido.wallet'
+            resValue "string", "app_name", "Ronin"
+            resValue "string", "version_name", "0.99.83"
+        }
     }
     testOptions {
         unitTests.returnDefaultValues = true
