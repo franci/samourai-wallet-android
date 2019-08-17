@@ -106,6 +106,12 @@
     <string name="options_whirlpool_gui2">Emparejar con la interfaz de Whirlpool para un mezclado continuo.</string>
     <string name="options_postmix">Gastar posmezclas de Whirlpool</string>
 
+    <string name="options_ui">Interfaz de Usuario</string>
+    <string name="options_force_locale">Forzar Idioma</string>
+    <string name="options_force_locale_summary">Forzar el idioma de la app.</string>
+    <string name="empty" translatable="false"></string>
+    <string name="system">Sistema</string>
+
     <string name="prompt_send_backup_to_support">Enviar copia de seguridad de la billetera al soporte técnico? No incluye ninguna clave privada, semilla (seed) ni contraseñas..</string>
 
     <string name="timeline_today">Hoy</string>
